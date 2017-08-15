@@ -1,3 +1,4 @@
+# Param - Required
 param([string]$Excel="")
 
 If ($Excel -eq "") {
@@ -27,8 +28,9 @@ $Output = $ExcelTempDir + "\xl\worksheets\sheet1.xml"
 # Load the existing document
 $Doc = [xml](Get-Content $Input)
 
-# Specify tag names to delete and then find them
+# Remove all tag with this name
 $DeleteNames = "sheetProtection"
+
 ($Doc.worksheet.ChildNodes |Where-Object { $DeleteNames -contains $_.Name }) | ForEach-Object {
 	# Remove each node from its parent
 	[void]$_.ParentNode.RemoveChild($_)
