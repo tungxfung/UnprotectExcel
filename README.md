@@ -6,7 +6,7 @@ Unfortunately, you don't have it.
 
 Then, you should try this script to unprotect the excel worksheet.
 
-Only take a second to unprotect your files.
+It only takes you a second to unprotect your files.
 
 You may need to modify the script as the script only unprotect the first worksheet.
 
