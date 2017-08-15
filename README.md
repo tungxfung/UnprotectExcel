@@ -14,7 +14,7 @@ To run the script
 
 ```
 
-./unprotect_excel.ps1 -EXCEL "your_excel_file.xlsx"
+Powershell -File "./unprotect_excel.ps1" -EXCEL "./your_excel_file.xlsx"
 
 ```
 
